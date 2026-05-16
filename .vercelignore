@@ -1,0 +1,7 @@
+videos/
+public/videos/
+.next/
+node_modules/
+*.mp4
+*.webm
+*.mp3
