@@ -1,6 +1,6 @@
-import { DemoDirectorAgent } from '../agents/video/DemoDirectorAgent';
-import { PlaywrightRecorder } from '../agents/video/PlaywrightRecorder';
-import { VideoComposerAgent } from '../agents/video/VideoComposerAgent';
+import { DemoDirectorAgent } from '../automation/video/DemoDirectorAgent';
+import { PlaywrightRecorder } from '../automation/video/PlaywrightRecorder';
+import { VideoComposerAgent } from '../automation/video/VideoComposerAgent';
 import path from 'path';
 import fs from 'fs';
 
