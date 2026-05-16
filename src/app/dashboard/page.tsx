@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Shield, Activity, Wifi, AlertTriangle, Zap, Loader2, Globe, Cpu, Layers, Radio, Navigation, ShieldCheck } from 'lucide-react';
+import { Shield, Activity, Wifi, AlertTriangle, Zap, Loader2, Globe, Cpu, Layers, Radio, Navigation2 as Navigation, ShieldCheck } from 'lucide-react';
 import { ResilienceAgent } from '@/agents/ResilienceAgent';
 
 export default function AuraNexus() {
