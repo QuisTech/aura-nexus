@@ -1,11 +1,10 @@
 # 🛡️ Aura Nexus: Enterprise AI Continuity Infrastructure
 
-## 🌪️ Inspiration
 In 2026, enterprise operations are more dependent on Large Language Models than ever before—yet modern AI infrastructure remains dangerously brittle. A single API timeout, rate-limit threshold, or server degradation doesn't just display an error; it completely wipes active conversational state, derails critical transactions, and leads to catastrophic context loss. 
 
-We were inspired by a real-world disaster: a logistics firm that lost $10M when their primary LLM gateway brownout occurred during a shipping surge. The backup system initialized, but because there was no active state continuity, the session context was completely wiped, resulting in silent failures across their supply chain.
+We were inspired by a logistics infrastructure incident in which a provider outage during a peak shipping window forced traffic onto a backup LLM route. Although failover succeeded at the network layer, conversational state and workflow context were not synchronized between providers. The system continued operating with incomplete session memory, creating silent downstream failures across fulfillment and support pipelines. Internal reporting later tied the outage to multi-million-dollar operational losses.
 
-We built **Aura Nexus** to make that story impossible. It is the world’s first resilience-first AI routing middleware designed to protect enterprise workflows against LLM downtime.
+Aura Nexus was built to ensure AI failover preserves not only uptime, but continuity. It is the world’s first resilience-first AI routing middleware designed to protect enterprise workflows against LLM downtime.
 
 ---
 
