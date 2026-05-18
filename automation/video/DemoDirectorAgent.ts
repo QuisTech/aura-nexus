@@ -120,8 +120,8 @@ export class DemoDirectorAgent {
 
     // --- SCENE 1: LANDING ---
     await humanMove(300, 100);
-    await highlight('.sovereign-text');
-    await humanFocus('.sovereign-text', 10000);
+    await highlight('.resilient-text');
+    await humanFocus('.resilient-text', 10000);
     
     await page.mouse.wheel(0, 800);
     await page.waitForTimeout(2000);
@@ -142,8 +142,8 @@ export class DemoDirectorAgent {
     await page.click('#test-failover-btn');
 
     // --- SCENE 3: THE 1:00 - 1:40 GAP ---
-    await highlight('#sovereign-trace');
-    await humanFocus('#sovereign-trace', 15000);
+    await highlight('#resilience-trace');
+    await humanFocus('#resilience-trace', 15000);
 
     await highlight('#resilience-matrix');
     const matrixStart = Date.now();

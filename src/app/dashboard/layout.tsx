@@ -55,8 +55,8 @@ const SidebarContent = ({ onItemClick }: { onItemClick?: () => void }) => {
           <Shield className="w-6 h-6 text-primary" />
         </div>
         <div className="flex flex-col">
-          <span className="font-black tracking-tighter text-lg sovereign-text">AURA NEXUS</span>
-          <span className="text-[9px] text-primary/70 uppercase tracking-[0.2em] font-bold">Sovereign Core</span>
+          <span className="font-black tracking-tighter text-lg resilient-text">AURA NEXUS</span>
+          <span className="text-[9px] text-primary/70 uppercase tracking-[0.2em] font-bold">Resilience Core</span>
         </div>
       </Link>
 
@@ -78,7 +78,7 @@ const SidebarContent = ({ onItemClick }: { onItemClick?: () => void }) => {
           </div>
           <div className="flex flex-col min-w-0">
             <span className="text-[10px] font-bold truncate">ADMIN@AURA.NEXUS</span>
-            <span className="text-[8px] text-muted-foreground uppercase tracking-widest">Sovereign Auth</span>
+            <span className="text-[8px] text-muted-foreground uppercase tracking-widest">Infrastructure Admin</span>
           </div>
         </div>
         <Button
@@ -122,7 +122,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <header className="lg:hidden flex items-center justify-between p-4 border-b border-white/5 bg-card/80 backdrop-blur-md sticky top-0 z-40">
           <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Shield className="w-5 h-5 text-primary" />
-            <span className="font-black text-sm tracking-tighter sovereign-text">AURA NEXUS</span>
+            <span className="font-black text-sm tracking-tighter resilient-text">AURA NEXUS</span>
           </Link>
           <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -134,7 +134,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse shadow-[0_0_8px_hsla(var(--primary),0.8)]" />
-              <span className="text-primary/80">Sovereign Link: Nominal</span>
+              <span className="text-primary/80">Active Link: Nominal</span>
             </div>
             <div className="flex items-center gap-2">
               <Activity className="w-3 h-3" />

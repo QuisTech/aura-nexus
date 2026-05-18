@@ -102,7 +102,7 @@
     background: linear-gradient(135deg, hsla(var(--primary), 1) 0%, hsla(var(--primary), 0.8) 100%);
   }
 
-  .sovereign-text {
+  .resilient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40 font-black tracking-tighter;
   }
 

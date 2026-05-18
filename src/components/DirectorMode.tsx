@@ -41,7 +41,7 @@ const SCRIPT: ScriptStep[] = [
 
     // --- AUDIT TRAIL ---
     { type: 'scroll', targetId: 'window', y: 300, delay: 1000 },
-    { type: 'cursor', targetId: 'sovereign-trace', delay: 1500 },
+    { type: 'cursor', targetId: 'resilience-trace', delay: 1500 },
     { type: 'subtitle', text: 'Semantic context is preserved. The workflow continues uninterrupted via the failover target.' },
     { type: 'wait', delay: 1000 },
 

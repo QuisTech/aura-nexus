@@ -61,7 +61,7 @@ export default function CommandHub() {
 
   const triggerMission = async () => {
     setIsMonitoring(true);
-    toast.promise(agent.current.executeMission("Sovereign Coordination Alpha"), {
+    toast.promise(agent.current.executeMission("Resilient Telemetry Scan Alpha"), {
       loading: 'Simulating Provider Degradation...',
       success: 'Stateful failover executed to Redundant Node',
       error: 'Mission failure detected',
@@ -82,7 +82,7 @@ export default function CommandHub() {
     <div className="p-6 space-y-6 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-black tracking-tighter sovereign-text uppercase">Infrastructure Control Plane</h2>
+          <h2 className="text-2xl font-black tracking-tighter resilient-text uppercase">Infrastructure Control Plane</h2>
           <p className="text-[10px] text-muted-foreground uppercase tracking-[0.3em] font-bold mt-1">Multi-Model Telemetry & Routing</p>
         </div>
         <Button 
@@ -210,7 +210,7 @@ export default function CommandHub() {
         </Card>
 
         {/* Failover History Log */}
-        <Card id="sovereign-trace" className="md:col-span-12 glass-card border-white/5">
+        <Card id="resilience-trace" className="md:col-span-12 glass-card border-white/5">
            <CardHeader className="flex flex-row items-center justify-between py-4">
               <CardTitle className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground flex items-center gap-3 font-bold">
                 <History className="w-4 h-4 text-primary" />

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aura Nexus | The Resilient Sovereign Life-Line",
-  description: "Autonomous, zero-downtime emergency coordination for the 2026 Sovereign Economy.",
+  title: "Aura Nexus | Enterprise AI Continuity Infrastructure",
+  description: "Autonomous, zero-downtime active-active AI continuity gateway for mission-critical enterprise workflows.",
 };
 
 export default function RootLayout({

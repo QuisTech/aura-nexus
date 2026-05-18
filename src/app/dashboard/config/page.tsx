@@ -56,11 +56,11 @@ export default function Configuration() {
     <div className="p-6 space-y-8 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-black tracking-tighter sovereign-text uppercase flex items-center gap-4">
+          <h2 className="text-2xl font-black tracking-tighter resilient-text uppercase flex items-center gap-4">
             <Settings className="text-primary w-6 h-6" />
             Protocols
           </h2>
-          <p className="text-[10px] text-muted-foreground uppercase tracking-[0.3em] font-bold mt-1">Sovereign Protocol Management</p>
+          <p className="text-[10px] text-muted-foreground uppercase tracking-[0.3em] font-bold mt-1">Resilience Protocol Management</p>
         </div>
         <Button 
           className="h-11 bg-primary text-primary-foreground font-black uppercase tracking-[0.2em] px-8 gap-3 shadow-[0_0_20px_hsla(var(--primary),0.3)] hover:scale-105 transition-all"
@@ -78,7 +78,7 @@ export default function Configuration() {
           <CardHeader>
             <CardTitle className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground flex items-center gap-3 font-bold">
               <ShieldCheck className="w-4 h-4 text-primary" />
-              Sovereign Protocols
+              Resilience Protocols
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-8 pt-2">
@@ -143,7 +143,7 @@ export default function Configuration() {
               variant="ghost" 
               size="icon" 
               className="h-8 w-8 text-primary hover:bg-primary/10 border border-primary/20"
-              onClick={() => toast.info('Core registration restricted to Sovereign Admin')}
+              onClick={() => toast.info('Core registration restricted to System Admin')}
             >
               <Plus className="w-4 h-4" />
             </Button>
@@ -172,7 +172,7 @@ export default function Configuration() {
                         variant="ghost" 
                         size="icon" 
                         className="h-9 w-9 text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors"
-                        onClick={() => toast.error('Sovereign Core removal restricted')}
+                        onClick={() => toast.error('Core infrastructure removal restricted')}
                       >
                         <Trash2 className="w-4 h-4" />
                       </Button>

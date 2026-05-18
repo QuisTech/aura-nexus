@@ -29,7 +29,7 @@ export class ResilienceAgent {
    */
   async executeMission(mission: string) {
     const logs: string[] = [];
-    logs.push(`🚀 Initializing Sovereign Mission: ${mission}`);
+    logs.push(`🚀 Initializing Resilient Mission: ${mission}`);
     
     // Step 1: Attempt Primary Execution
     logs.push(`📡 Querying ${this.providers[0].name}...`);
@@ -46,7 +46,7 @@ export class ResilienceAgent {
     await this.delay(1000);
 
     // Step 3: Trigger Sovereign Failover
-    logs.push(`🛡️ Triggering Sovereign Failover to ${this.providers[1].name}...`);
+    logs.push(`🛡️ Triggering Active Failover to ${this.providers[1].name}...`);
     this.providers[0].status = 'Offline';
     this.providers[1].status = 'Active';
     this.currentProviderIndex = 1;

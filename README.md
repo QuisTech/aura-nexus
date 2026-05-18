@@ -12,7 +12,7 @@ Aura Nexus was built to make that story impossible. It is the world’s first re
 
 - **Sub-500ms Stateful Failover:** Active telemetry monitors Time-To-First-Token (TTFT) and response entropy to predict degradation, instantly hot-swapping queries to fallback shadow nodes in under 500ms.
 - **Semantic State Preservation:** Unlike standard load balancers that wipe user session data during failover, Aura Nexus serializes and synchronizes ongoing conversational context, prompts, and parameters. The switch is completely invisible to the user.
-- **Sovereign Protocols Panel:** A centralized control plane allowing enterprise admins to toggle autonomous self-healing, customize latency triggers, and manage distributed active-active cores in real-time.
+- **Resilience Protocols Panel:** A centralized control plane allowing enterprise admins to toggle autonomous self-healing, customize latency triggers, and manage distributed active-active cores in real-time.
 - **Tamper-Evident Audit Ledger:** Every failover, telemetry pulse, and system parameter change is SHA-256 hashed and logged in an immutable, compliance-ready ledger—guaranteeing SOC2 and HIPAA audit readiness out of the box.
 
 ---

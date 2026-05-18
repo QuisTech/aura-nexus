@@ -18,7 +18,7 @@ export default function LandingPage() {
           <div className="w-10 h-10 resilient-gradient rounded-xl flex items-center justify-center border border-emerald-500/30">
             <Shield className="w-6 h-6 text-white" />
           </div>
-          <span className="text-xl font-black tracking-tighter sovereign-text uppercase">Aura Nexus</span>
+          <span className="text-xl font-black tracking-tighter resilient-text uppercase">Aura Nexus</span>
         </div>
         <div className="hidden md:flex items-center gap-8">
           <a href="#problem" className="text-xs font-bold text-slate-400 hover:text-white transition-colors tracking-widest uppercase">The Problem</a>
