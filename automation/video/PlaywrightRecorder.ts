@@ -24,10 +24,13 @@ export class PlaywrightRecorder {
 
     const page = await this.context.newPage();
 
-    // NO LEGACY INJECTIONS HERE. 
-    // We rely entirely on the Physical React Cursor in CustomCursor.tsx
+    page.on('console', msg => console.log(`💻 BROWSER LOG: [${msg.type()}] ${msg.text()}`));
+    page.on('pageerror', err => console.log(`❌ BROWSER ERROR: ${err.message}`));
 
-    await page.goto(options.url, { waitUntil: 'networkidle', timeout: 60000 });
+    // Inject CSS to hide the cursor completely during the video recording
+    await page.addStyleTag({ content: 'body { cursor: none !important; } * { cursor: none !important; }' });
+
+    await page.goto(options.url, { waitUntil: 'load', timeout: 120000 });
     return page;
   }
 
